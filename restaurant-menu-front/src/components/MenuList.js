@@ -14,7 +14,8 @@ export const MenuList = () => {
     axios
       .get(`${baseURL}/menu/`, {
         headers: {
-          headers,
+            'accept': 'application/json',
+            'content-type': 'multipart/form-data'
         },
       })
       .then((response) => {

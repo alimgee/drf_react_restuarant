@@ -28,7 +28,8 @@ export const AddMenu = () => {
     axios
       .post(`${baseURL}/menu/`, data, {
         headers: {
-          headers,
+            'accept': 'application/json',
+            'content-type': 'multipart/form-data'
         },
       })
       .then((response) => {
