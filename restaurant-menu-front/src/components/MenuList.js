@@ -31,7 +31,8 @@ export const MenuList = () => {
     axios
       .delete(`${baseURL}/menu/${id}/`, {
         headers: {
-          headers,
+            'accept': 'application/json',
+            'content-type': 'multipart/form-data'
         },
       })
       .then((response) => {

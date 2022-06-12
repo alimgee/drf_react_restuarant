@@ -24,7 +24,8 @@ function App() {
       <div className="container m-10">
         <Routes>
           <Route path="/" element={<MenuList />} />
-         
+          <Route path="/add/" element={<AddMenu />} />
+          <Route path="/menu/:id/update/" element={<UpdateMenu />} />
         </Routes>
       </div>
     </div>

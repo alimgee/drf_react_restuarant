@@ -29,7 +29,8 @@ export const UpdateMenu = () => {
     axios
       .get(`${baseURL}/menu/${id}/`, {
         headers: {
-          headers,
+            'accept': 'application/json',
+            'content-type': 'multipart/form-data'
         },
       })
       .then((response) => {
